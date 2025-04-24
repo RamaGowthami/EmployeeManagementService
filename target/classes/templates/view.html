@@ -1,0 +1,35 @@
+<!--<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Employee</title>
+</head>
+<body>
+<h1>Employee Details</h1>
+<p><strong>First Name:</strong> <span th:text="${employee.firstName}"></span></p>
+<p><strong>Last Name:</strong> <span th:text="${employee.lastName}"></span></p>
+<p><strong>Email:</strong> <span th:text="${employee.email}"></span></p>
+<p><strong>Department:</strong> <span th:text="${employee.department}"></span></p>
+<a th:href="@{/}">Back to List</a>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>View Employee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="mb-4">Employee Details</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><strong>First Name:</strong> <span th:text="${employee.firstName}"></span></li>
+        <li class="list-group-item"><strong>Last Name:</strong> <span th:text="${employee.lastName}"></span></li>
+        <li class="list-group-item"><strong>Email:</strong> <span th:text="${employee.email}"></span></li>
+        <li class="list-group-item"><strong>Department:</strong> <span th:text="${employee.department}"></span></li>
+    </ul>
+    <a th:href="@{/}" class="btn btn-secondary mt-3">Back to List</a>
+</div>
+</body>
+</html>
